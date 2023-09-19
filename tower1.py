@@ -8,4 +8,15 @@ def tower_of_hanoi(n, source, auxiliary, target):
     tower_of_hanoi(n-1, auxiliary, source, target)
 
 n = int(input("Enter the number of disks: "))
+print("start state")
+A=[]
+for i in range(1,n+1):
+    A.append(i)
+print("A:",A,"B:0 C:0") 
 tower_of_hanoi(n, 'A', 'B', 'C')
+print("goal state reached")
+C=[]
+for i in range(1,n+1):
+    C.append(i)
+print("A:0 B:0 C:",C) 
+
